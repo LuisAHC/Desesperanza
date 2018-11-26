@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<title>La Desesperanza</title>
+	<link href="boots/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+</head>
+<body>
+	<header class="headerIPN">
+		<img src="imagenes/logoIPN.png" alt="LOGO IPN">
+		<img src="imagenes/logoESCOM.png" alt="LOGO ESCOM">
+		<div>
+			<h2 class="site-heading-upper text-primary mb-3">Tecnolog&iacuteas para la Web</h2>
+			<h3>2CV9</h3>
+			<h1>La Desesperanza</h1>
+		</div>
+	</header>
+
+	<nav>
+		<script>
+			function myFunction() {
+    			var x = document.getElementById("barraNav");
+    			if (x.className === "topnav") {
+        			x.className += " responsive";
+    			} else {
+        			x.className = "topnav";
+    			}
+			}
+		</script>
+		<div class="topnav" id="barraNav">
+			<a href="index.html">
+				<img src="imagenes/logo2white.png" style="width: 40px; height: auto;">
+			</a>
+			<a href="index.html">Inicio</a>
+			<a href="nosotros.html">Sobre nosotros</a>
+			<a href="productos.html">Productos</a>
+			<a href="ayuda.html">Ayuda</a>
+			<a href="login.html">Entrar</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<img src="imagenes/barras.png" style="width: 30px; height: auto;">
+    			<i class="fa fa-bars"></i>
+  			</a>
+		</div>
+	</nav>
+
+	<main>
+
+		<section class="page-section cta">
+      		<div class="container">
+        		<div class="row">
+          			<div class="col-xl-9 mx-auto">
+            			<div class="cta-inner text-center rounded">
+            	  			<p>Usuario: </p><input type="text" name="usuario" placeholder="usuario" class="texto">
+            	  			<br><br>
+							<p>Contraseña:</p><input type="password" name="contrasena" placeholder="contraseña" class="texto">
+							<br><br>
+							<div class="intro-button mx-auto">
+            					<a class="btn btn-primary btn-xl" href="#">Envia</a>
+           					</div>
+							<p class="texto">¿No tienes una cuenta? <a href="">Crea una</a></p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+    	</section>
+		
+	</main>
+
+	<footer>
+		<img src="imagenes/logo2white.png" alt="logoDesesperanza">
+		<div class="nav_bottom">
+			<div class="columna">
+				<ul>
+					<li>
+						<a href="">Desesperanza</a>
+					</li>
+					<li>
+						<a href="">Contacto</a>
+					</li>
+					<li>
+						<a href="">Sobre Desesperanza</a>
+					</li>
+					<li>
+						<a href="">Condiciones de uso</a>
+					</li>
+					<li>
+						<a href="">Politicas de privacidad</a>
+					</li>
+				</ul>
+			</div>
+			<div class="columna">
+				<ul>
+					<li>
+						<a href="">Instituto Polit&eacutecnico Nacional</a>
+					</li>
+					<li>
+						<a href="">IPN</a>
+					</li>
+					<li>
+						<a href="">ESCOM</a>
+					</li>
+				</ul>
+			</div>
+			<div class="columna">
+				<ul>
+					<li>
+						<a href="">Ayuda</a>
+					</li>
+					<li>
+						<a href="">FAQ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<p>&copy; 2018 Desesperanza. Todos los derechos reservados.</p>
+	</footer>
+
+</body>
+</html>
