@@ -1,10 +1,17 @@
-function cargarDatos () {
+function inicializa () {
+	document.getElementById("botonblanco").addEventListener("click", function() {cargarTipo("Blanco")}, false);
+	document.getElementById("botondulce").addEventListener("click", function() {cargarTipo("Dulce")}, false);
+	document.getElementById("botontodo").addEventListener("click", cargarTodo, false);
+	cargarTodo();
+}
+
+function cargarTodo () {
 	try {
 		var peticion = new XMLHttpRequest();
 		peticion.onreadystatechange = function () {
 			if (peticion.readyState == 4 && peticion.status == 200) {
-				mostrarTodo(this)
-		}
+				mostrarTodo(this);
+			}
 		}
 		peticion.open("GET", "catalogo.xml", true);
 		peticion.send(null);
@@ -13,13 +20,28 @@ function cargarDatos () {
 	}
 }
 
-function articulo_to_string (articulo) {
-	var nombre = articulo.getElementsByTagName("NOMBRE")[0].childNodes[0].nodeValue;
-	var tipo = articulo.getElementsByTagName("TIPO")[0].childNodes[0].nodeValue;
-	var precio = articulo.getElementsByTagName("PRECIO")[0].childNodes[0].nodeValue;
-	var descripcion = articulo.getElementsByTagName("DESCRIPCION")[0].childNodes[0].nodeValue;
-	var rating = articulo.getElementsByTagName("RATING")[0].childNodes[0].nodeValue;
-	var imagen = articulo.getElementsByTagName("IMAGEN")[0].childNodes[0].nodeValue;
+function cargarTipo (tipo) {
+	try {
+		var peticion = new XMLHttpRequest();
+		peticion.onreadystatechange = function () {
+			if (peticion.readyState == 4 && peticion.status == 200) {
+				mostrarTipo(this, tipo);
+			}
+		}
+		peticion.open("GET", "catalogo.xml", true);
+		peticion.send(null);
+	} catch (e) {
+		alert("No se pudo procesar: " + e);
+	}	
+}
+
+function pan_to_string (pan) {
+	var nombre = pan.getElementsByTagName("NOMBRE")[0].childNodes[0].nodeValue;
+	var tipo = pan.getElementsByTagName("TIPO")[0].childNodes[0].nodeValue;
+	var precio = pan.getElementsByTagName("PRECIO")[0].childNodes[0].nodeValue;
+	var descripcion = pan.getElementsByTagName("DESCRIPCION")[0].childNodes[0].nodeValue;
+	var rating = pan.getElementsByTagName("RATING")[0].childNodes[0].nodeValue;
+	var imagen = pan.getElementsByTagName("IMAGEN")[0].childNodes[0].nodeValue;
 	
 	var texto = "<article itemtype='https://schema.org/individualproduct' class='producto'>";
 
@@ -45,11 +67,22 @@ function articulo_to_string (articulo) {
 function mostrarTodo (peticion) {
 	var xml = peticion.responseXML;
 	var x = xml.getElementsByTagName("PAN");
-	var html = "";
+	var html = "<h2>Todo</h2>";
 
-	for (var i = 0; i < x.length; i++) {
-		html += articulo_to_string(x[i]);
-	}
+	for (var i = 0; i < x.length; i++)
+		html += pan_to_string(x[i]);
+
+	document.getElementById("lista").innerHTML = html;
+}
+
+function mostrarTipo (peticion, opcion) {
+	var xml = peticion.responseXML;
+	var x = xml.getElementsByTagName("PAN");
+	var html = "<h2>Pan " + opcion + "</h2>";
+
+	for (var i = 0; i < x.length; i++)
+		if (x[i].getElementsByTagName("TIPO")[0].childNodes[0].nodeValue == opcion)
+				html += pan_to_string(x[i]);
 
 	document.getElementById("lista").innerHTML = html;
 }
@@ -63,4 +96,4 @@ function FunctionBarras () {
 	}
 }
 
-window.addEventListener("load", cargarDatos, false);
+window.addEventListener("load", inicializa, false);
