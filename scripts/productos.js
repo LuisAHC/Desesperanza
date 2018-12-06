@@ -2,7 +2,59 @@ function inicializa () {
 	document.getElementById("botonblanco").addEventListener("click", function() {cargarTipo("Blanco")}, false);
 	document.getElementById("botondulce").addEventListener("click", function() {cargarTipo("Dulce")}, false);
 	document.getElementById("botontodo").addEventListener("click", cargarTodo, false);
+	document.getElementById("botonnombre").addEventListener("click", BusquedaPorNombre, false);
+
 	cargarTodo();
+	cargarNombres();
+}
+
+function inizializarBusquedaPorNombre (peticion) {
+	var xml = peticion.responseXML;
+	var x = xml.getElementsByTagName("PAN");
+	var nombres = new Array();
+	var select = document.getElementById("pornombre");
+
+	for (var i = 0; i < x.length; i++)
+		nombres.push(x[i].getElementsByTagName("NOMBRE")[0].childNodes[0].nodeValue);
+
+	for (var i = 0; i < nombres.length; i++) {
+		var option = document.createElement("option");
+		option.value = nombres[i];
+		option.innerHTML = nombres[i];
+		select.appendChild(option);
+	}
+}
+
+function BusquedaPorNombre () {
+	var nombre = document.getElementById("pornombre").value;
+
+	try {
+		var peticion = new XMLHttpRequest();
+		peticion.onreadystatechange = function () {
+			if (peticion.readyState == 4 && peticion.status == 200) {
+				document.getElementById("lista").innerHTML = this.responseText;
+			}
+		}
+		peticion.open("GET", "scripts/productos.php?nombre=" + nombre, true);
+		peticion.send(null);
+	} catch (e) {
+		alert("No se pudo procesar: " + e);
+	}
+}
+
+function cargarNombres () {
+	try {
+		var peticion = new XMLHttpRequest();
+		peticion.onreadystatechange = function () {
+			if (peticion.readyState == 4 && peticion.status == 200) {
+				inizializarBusquedaPorNombre(this);
+			}
+		}
+		peticion.open("GET", "catalogo.xml", true);
+		peticion.send(null);
+	} catch (e) {
+		alert("No se pudo procesar: " + e);
+	}
 }
 
 function cargarTodo () {
@@ -60,7 +112,7 @@ function pan_to_string (pan) {
 	//Rating
 	texto += "<div class='card-footer'><small>" + rating + "</small></div>";
 
-	texto += "</article>"
+	texto += "</article>";
 	return texto;
 }
 
