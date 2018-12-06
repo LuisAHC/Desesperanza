@@ -1,3 +1,5 @@
+var catalogo = "catalogo.xml";
+
 function inicializa () {
 	document.getElementById("botonblanco").addEventListener("click", function() {cargarTipo("Blanco")}, false);
 	document.getElementById("botondulce").addEventListener("click", function() {cargarTipo("Dulce")}, false);
@@ -28,7 +30,7 @@ function inizializarBusquedaPorNombre (peticion) {
 function BusquedaPorNombre () {
 	var nombre = document.getElementById("pornombre").value;
 	var loc = window.location.href;
-	loc = loc.substring(0, loc.lastIndexOf("/")+1) + "catalogo.xml";
+	loc = loc.substring(0, loc.lastIndexOf("/")+1) + catalogo;
 
 	try {
 		var peticion = new XMLHttpRequest();
@@ -52,7 +54,7 @@ function cargarNombres () {
 				inizializarBusquedaPorNombre(this);
 			}
 		}
-		peticion.open("GET", "catalogo.xml", true);
+		peticion.open("GET", catalogo, true);
 		peticion.send(null);
 	} catch (e) {
 		alert("No se pudo procesar: " + e);
@@ -67,7 +69,7 @@ function cargarTodo () {
 				mostrarTodo(this);
 			}
 		}
-		peticion.open("GET", "catalogo.xml", true);
+		peticion.open("GET", catalogo, true);
 		peticion.send(null);
 	} catch (e) {
 		alert("No se pudo procesar: " + e);
@@ -82,7 +84,7 @@ function cargarTipo (tipo) {
 				mostrarTipo(this, tipo);
 			}
 		}
-		peticion.open("GET", "catalogo.xml", true);
+		peticion.open("GET", catalogo, true);
 		peticion.send(null);
 	} catch (e) {
 		alert("No se pudo procesar: " + e);
