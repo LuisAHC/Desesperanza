@@ -27,18 +27,42 @@
 		<RATING>★ ★ ★ ★ ☆</RATING>
 		<IMAGEN>imagenes/pretzel.jpg</IMAGEN>
 	</PAN>
-	<!--Dulces-->
 	<PAN>
 		<NOMBRE>Rosca de Reyes</NOMBRE>
-		<TIPO>Dulces</TIPO>
+		<TIPO>Blanco</TIPO>
 		<PRECIO MONEDA="PESOS">149.99</PRECIO>
 		<DESCRIPCION>Es un bollo elaborado con una masa dulce con forma de toroide adornado con rodajas de fruta cristalizada (escarchada) o confitada de colores variados.</DESCRIPCION>
 		<RATING>★ ★ ★ ★ ☆</RATING>
 		<IMAGEN>imagenes/roscareyes.jpg</IMAGEN>
 	</PAN>
 	<PAN>
+		<NOMBRE>Hojaldra</NOMBRE>
+		<TIPO>Blanco</TIPO>
+		<PRECIO MONEDA="PESOS">5.49</PRECIO>
+		<DESCRIPCION>Se trata de un pan redondo o con forma similar a una media esfera, esponjoso y suave, de color café oscuro. Se puede comer solo o relleno como una torta.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/hojaldra.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Chapata</NOMBRE>
+		<TIPO>Blanco</TIPO>
+		<PRECIO MONEDA="PESOS">5.99</PRECIO>
+		<DESCRIPCION>Es un pan de origen italiano que se carateriza por una miga ligerísima y llena de grandes alvéolos, una corteza crujiente y una forma alargada.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/chapata.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Orejas</NOMBRE>
+		<TIPO>Blanco</TIPO>
+		<PRECIO MONEDA="PESOS">7.49</PRECIO>
+		<DESCRIPCION>Es un pan de hojaldra dulce con una textura un poco dura pero agradable y que puedes acompañar con una buena taza de café.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/orejas.jpg</IMAGEN>
+	</PAN>
+	<!--Dulces-->
+	<PAN>
 		<NOMBRE>Manteconchas</NOMBRE>
-		<TIPO>Dulces</TIPO>
+		<TIPO>Dulce</TIPO>
 		<PRECIO MONEDA="PESOS">9.99</PRECIO>
 		<DESCRIPCION>Este pan, mezcla de la concha y la mantecada. Un pan híbrido creado recientemente en territorio nacional, cruzaron la frontera a poco más de un mes de su nacimiento.</DESCRIPCION>
 		<RATING>★ ★ ★ ★ ☆</RATING>
@@ -46,7 +70,7 @@
 	</PAN>
 	<PAN>
 		<NOMBRE>Mantemuerto</NOMBRE>
-		<TIPO>Dulces</TIPO>
+		<TIPO>Dulce</TIPO>
 		<PRECIO MONEDA="PESOS">12.99</PRECIO>
 		<DESCRIPCION>El "mantemuerto" Es una mantecada que por encima lleva el aspecto de un pan de muertos</DESCRIPCION>
 		<RATING>★ ★ ★ ★ ☆</RATING>
@@ -54,7 +78,7 @@
 	</PAN>
 	<PAN>
 		<NOMBRE>Dona de Azucar</NOMBRE>
-		<TIPO>Dulces</TIPO>
+		<TIPO>Dulce</TIPO>
 		<PRECIO MONEDA="PESOS">9.99</PRECIO>
 		<DESCRIPCION>Las donas de azúcar se tratan de un delicioso pan suave y esponjoso cubierto con una capa de azúcar que puede salvar hasta el día más gris</DESCRIPCION>
 		<RATING>★ ★ ★ ★ ☆</RATING>
@@ -62,10 +86,42 @@
 	</PAN>
 	<PAN>
 		<NOMBRE>Concha</NOMBRE>
-		<TIPO>Dulces</TIPO>
+		<TIPO>Dulce</TIPO>
 		<PRECIO MONEDA="PESOS">6.99</PRECIO>
 		<DESCRIPCION>La concha es una variedad de pan de dulce mexicano. Es llamada así por su forma parecida a la concha de mar. Contiene una capa, llamada pasta, a base de azúcar, manteca y harina en la parte superior.</DESCRIPCION>
 		<RATING>★ ★ ★ ★ ☆</RATING>
 		<IMAGEN>imagenes/concha.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Moño</NOMBRE>
+		<TIPO>Dulce</TIPO>
+		<PRECIO MONEDA="PESOS">7.99</PRECIO>
+		<DESCRIPCION>La forma de este pan nos recuerda a los moños usados por las niñas para decorar sus peinados.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/mono.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Polvorones</NOMBRE>
+		<TIPO>Dulce</TIPO>
+		<PRECIO MONEDA="PESOS">12.99</PRECIO>
+		<DESCRIPCION>Es un tipo de matencado al cual se le añade almendra en distintas proporciones. Es una comida típica en las fiestas navideñas.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/polvoron.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Beso</NOMBRE>
+		<TIPO>Dulce</TIPO>
+		<PRECIO MONEDA="PESOS">15.49</PRECIO>
+		<DESCRIPCION>Llamado así por la forma que tiene, son panes dulces rellenos de mermelada de fresa y además bañados de azúcar.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/beso.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Roles de canela</NOMBRE>
+		<TIPO>Dulce</TIPO>
+		<PRECIO MONEDA="PESOS">9.99</PRECIO>
+		<DESCRIPCION>Consiste en un rollo de masa con canela y mezcla de azúcar, rociado sobre una capa de mantequilla.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/rolescanela.jpg</IMAGEN>
 	</PAN>
 </PANADERIA>
