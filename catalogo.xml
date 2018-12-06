@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE desesperanza SYSTEM "desesperanza.dtd">
+
+<PANADERIA>
+	<!--Blancos-->
+	<PAN>
+		<NOMBRE>Bolillo</NOMBRE>
+		<TIPO>Blanco</TIPO>
+		<PRECIO MONEDA="PESOS">2.99</PRECIO>
+		<DESCRIPCION>El bolillo, pan blanco o pan francés es, en México y Centroamérica, un tipo de pan económico y bastante popular elaborado con harina de trigo, que no es considerado dulce. </DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/bolillo.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Baguette</NOMBRE>
+		<TIPO>Blanco</TIPO>
+		<PRECIO MONEDA="PESOS">19.99</PRECIO>
+		<DESCRIPCION>Una baguette​ (en francés literalmente ‘varita’) o baguete​ es una variedad de pan que se caracteriza por emplear harina de trigo, por ser mucho más largo que ancho y por su corteza crujiente. Es ideal para la elaboración de bocadillos. Una baguette estándar mide unos cinco o seis centímetros de largo. </DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/baguette.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Pretzel</NOMBRE>
+		<TIPO>Blanco</TIPO>
+		<PRECIO MONEDA="PESOS">29.99</PRECIO>
+		<DESCRIPCION>Es un tipo de galleta o bollo horneado, y retorcido en forma de lazo, con un sabor ligeramente salado.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/pretzel.jpg</IMAGEN>
+	</PAN>
+	<!--Dulces-->
+	<PAN>
+		<NOMBRE>Rosca de Reyes</NOMBRE>
+		<TIPO>Dulces</TIPO>
+		<PRECIO MONEDA="PESOS">149.99</PRECIO>
+		<DESCRIPCION>Es un bollo elaborado con una masa dulce con forma de toroide adornado con rodajas de fruta cristalizada (escarchada) o confitada de colores variados.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/roscareyes.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Manteconchas</NOMBRE>
+		<TIPO>Dulces</TIPO>
+		<PRECIO MONEDA="PESOS">9.99</PRECIO>
+		<DESCRIPCION>Este pan, mezcla de la concha y la mantecada. Un pan híbrido creado recientemente en territorio nacional, cruzaron la frontera a poco más de un mes de su nacimiento.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/manteconcha.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Mantemuerto</NOMBRE>
+		<TIPO>Dulces</TIPO>
+		<PRECIO MONEDA="PESOS">12.99</PRECIO>
+		<DESCRIPCION>El "mantemuerto" Es una mantecada que por encima lleva el aspecto de un pan de muertos</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/mantemuerto.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Dona de Azucar</NOMBRE>
+		<TIPO>Dulces</TIPO>
+		<PRECIO MONEDA="PESOS">9.99</PRECIO>
+		<DESCRIPCION>Las donas de azúcar se tratan de un delicioso pan suave y esponjoso cubierto con una capa de azúcar que puede salvar hasta el día más gris</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/donaAzucar.jpg</IMAGEN>
+	</PAN>
+	<PAN>
+		<NOMBRE>Concha</NOMBRE>
+		<TIPO>Dulces</TIPO>
+		<PRECIO MONEDA="PESOS">6.99</PRECIO>
+		<DESCRIPCION>La concha es una variedad de pan de dulce mexicano. Es llamada así por su forma parecida a la concha de mar. Contiene una capa, llamada pasta, a base de azúcar, manteca y harina en la parte superior.</DESCRIPCION>
+		<RATING>★ ★ ★ ★ ☆</RATING>
+		<IMAGEN>imagenes/concha.jpg</IMAGEN>
+	</PAN>
+</PANADERIA>
