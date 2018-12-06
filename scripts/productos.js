@@ -27,6 +27,8 @@ function inizializarBusquedaPorNombre (peticion) {
 
 function BusquedaPorNombre () {
 	var nombre = document.getElementById("pornombre").value;
+	var loc = window.location.href;
+	loc = loc.substring(0, loc.lastIndexOf("/")+1) + "catalogo.xml";
 
 	try {
 		var peticion = new XMLHttpRequest();
@@ -35,7 +37,7 @@ function BusquedaPorNombre () {
 				document.getElementById("lista").innerHTML = this.responseText;
 			}
 		}
-		peticion.open("GET", "scripts/productos.php?nombre=" + nombre, true);
+		peticion.open("GET", "scripts/productos.php?nombre=" + nombre + "&direccion=" + loc, true);
 		peticion.send(null);
 	} catch (e) {
 		alert("No se pudo procesar: " + e);

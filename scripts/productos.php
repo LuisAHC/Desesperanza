@@ -8,9 +8,10 @@ function getValue ($element, $etiqueta) {
 }
 
 $nombre = $_GET["nombre"];
+$direccion = $_GET["direccion"];
 
 $xml = new DOMDocument();
-$xml->load("/opt/lampp/htdocs/Desesperanza/catalogo.xml");
+$xml->load($direccion);
 
 $panes = $xml->getElementsByTagName("NOMBRE");
 for ($i = 0; $i < $panes->length; $i++)
